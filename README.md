@@ -1,3 +1,3 @@
 # portfolio
 
-pagina demostrando um pouco sobre mim e o que sou capaz de criar
+Pagina demostrando um pouco sobre mim e projetos que fiz e parcipei. 
