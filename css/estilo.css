@@ -1,0 +1,770 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+    font-family: 'Phudu';
+    src: url('../fonts/Phudu-VariableFont_wght.ttf') format('woff');
+}
+#checkMenu {
+    display: none;
+}
+#lblCheckMenu {
+    display: none;
+}
+#btnCVMobile {
+    display: none;
+}
+body {
+    font-family: 'WorkSans', sans-serif;
+    background-color: #002845;
+}
+
+#logoMenu {
+    color: #0095ff;
+    font-size: 3rem;
+    padding: 20px 50px;
+    line-height: 6rem;
+}
+#menu {
+    width: 100%;
+    background-color: #002138e5;
+    line-height: 10vh;
+    position: fixed;
+    z-index: 4;
+}
+#conteinerMenu {
+    width: 70%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+#btnsMenu {
+    color: white;
+    text-decoration: none;
+    line-height: 6rem;
+    float: right;
+    text-shadow: 2px 2px 5px #002138;
+}
+#btnsMenu button {
+    border: none;
+    background-color: #00000000;
+    color: white;
+    font-size: 1rem;
+    font-family: 'WorkSans', sans-serif;
+    padding: 0.5rem 0.6rem;
+    margin-left: 1rem;
+    border-radius: 0.1rem;
+    border-bottom: 3px rgba(255, 255, 255, 0) solid;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#btnsMenu button:hover {
+    border-bottom: 3px #fff52b solid;
+}
+#btnsMenu .iconesMenu {
+    padding-right: 0.6rem;
+}
+.page {
+    min-height: 100vh;
+    padding-top: 7rem;
+    display: block;
+    height: 100%;
+}
+#logo-banner {
+    font-size: 15rem;
+    color: #0c3e62a0;
+}
+
+.titulo h2 {
+    font-family: 'Phudu';
+    text-transform: uppercase;
+
+    font-size: 8vmin;
+    color: #0095ff;
+    text-align: center;
+}
+.titulo .linha {
+    padding: 0.6rem;
+    display: block;
+    width: 10%;
+    margin: auto;
+    border-bottom: 3px #fff52b solid;
+}
+#inicial {
+    background-image: url('../img/padrao-rs.png');
+    background-size: 11rem;
+    background-position: center;
+}
+
+#inicial article {
+    width: 60%;
+    margin: auto;
+    padding-top: 3vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+#resumo {
+    width: 50%;
+    color: white;
+}
+
+#resumo h2 {
+    font-family: 'Phudu';
+    text-transform: uppercase;
+    font-size: 4vw;
+    margin-bottom: 1rem;
+    color: #0095ff;
+}
+
+#resumo p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-shadow: 1px 1px 2px black;
+}
+#socialIcones {
+    width: 70%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#socialIcones a {
+    text-decoration: none;
+    color: white;
+    line-height: 1;
+    transition: 0.1s;
+}
+#socialIcones .icone {
+    font-size: 2.3vw;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6rem;
+}
+#socialIcones a:hover {
+    transform: scale(1.3);
+}
+
+#socialIcones .icon-linkedin-in {
+    background-color: #0066c8;
+}
+#socialIcones .icon-github {
+    background-color: #000000;
+}
+#socialIcones .icon-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+#socialIcones .icon-whatsapp {
+    background-color: #33cc33;
+}
+
+#sobre {
+    color: white;
+}
+#sobre .conteiner {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8vh 0;
+}
+#conteinerInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#sobre picture img {
+    width: 23vw;
+    max-width: 400px;
+    padding: 2vw;
+}
+#descricao {
+    width: 80vw;
+}
+
+#descricao p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+#btnCv {
+    background-color: #0095ff;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#btnCv:hover {
+    background-color: #fff52b;
+    color: #0095ff;
+}
+#informaçoesPessoais {
+    margin-bottom: 1rem;
+}
+#informaçoesPessoais p {
+    margin-bottom: 0.4rem;
+}
+
+#iconesConecimento {
+    padding-top: 18vh;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.iconeC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vmin;
+    height: 20vmin;
+    margin: 1px;
+    font-size: 13vmin;
+    color: white;
+    transition: 0.25s;
+}
+#conhecimentos {
+    background-color: #1e1e1e;
+    background-image: url(../img/Logo_Ronaldo-Santos_4000.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    padding-bottom: 10vh;
+}
+#projetos {
+    padding-bottom: 5rem;
+}
+#imgs-aplicacoes {
+    width: 65vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+#imgs-design {
+    width: 65vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.imgs-Detalhes figure {
+    height: 15rem;
+    margin: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgs-Detalhes img {
+    width: 15rem;
+    transition: transform 0.3s ease;
+}
+
+.imgs-Detalhes figcaption {
+    height: 100%;
+    background-color: #04132ae8;
+    color: white;
+    text-shadow: 1px 1px 1px #002138;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.imgs-Detalhes figure:hover figcaption {
+    opacity: 1;
+}
+.imgs-Detalhes figure:hover img {
+    transform: scale(1.4);
+}
+.imgs-Detalhes h4 {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.imgs-Detalhes p {
+    font-size: 0.8rem;
+    text-align: justify;
+    text-indent: 1.5rem;
+}
+
+#imgs-design figure {
+    height: 15rem;
+}
+
+#imgs-aplicacoes figure {
+    height: 23.5rem;
+}
+#imgs-aplicacoes figcaption {
+    justify-content: space-between;
+}
+.btnProjeto {
+    background-color: #0095ff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 4rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.subTProjetos {
+    color: #fff52b;
+    width: 60%;
+    font-size: 1.4rem;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: right;
+    padding: 2rem;
+}
+#rodape {
+    background-color: #001e33;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+}
+/* Estilos para telas grandes */
+@media screen and (min-width: 1010px) {
+    #resumo h2 {
+        font-size: 4vw;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Estilos para telas médias */
+@media screen and (max-width: 1009px) {
+    #logoMenu {
+        padding: 0;
+        color: #0095ff;
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+
+    #conteinerMenu {
+        width: 100vw;
+        margin: auto;
+        padding: 0 10vw;
+    }
+
+    #btnsMenu {
+        color: white;
+        text-decoration: none;
+        line-height: 6rem;
+        float: right;
+        text-shadow: 2px 2px 5px #002138;
+    }
+    #btnsMenu button {
+        border: none;
+        background-color: #00000000;
+        color: white;
+        font-size: 1rem;
+        padding: 0.5rem 0.5vw;
+        margin-left: 1rem;
+        border-radius: 0.1rem;
+        border-bottom: 3px rgba(255, 255, 255, 0) solid;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    #btnsMenu button:hover {
+        border-bottom: 3px #fff52b solid;
+    }
+
+    #btnsMenu button span {
+        padding-right: 0.4rem;
+    }
+
+    #inicial {
+        padding-top: 15vh;
+    }
+    #inicial article {
+        padding-top: 0;
+    }
+    #logo-banner {
+        font-size: 18vw;
+        color: #0c3e62a0;
+    }
+    #sobre .conteiner {
+        margin: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteinerInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+    #sobre picture img {
+        width: 25vw;
+    }
+    #imgs-design {
+        width: 80vw;
+    }
+    #imgs-aplicacoes {
+        width: 80vw;
+    }
+}
+/* Estilos para telas intermediarias (como smartphones grandes) */
+@media screen and (max-width: 695px) {
+    #resumo {
+        width: 70vw;
+    }
+    #inicial article {
+        width: 60%;
+        margin: auto;
+        padding-top: 3vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70vh;
+    }
+    #logo-banner {
+        display: none;
+    }
+    #socialIcones {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #socialIcones a {
+        text-decoration: none;
+        color: white;
+        line-height: 1;
+        transition: 0.1s;
+    }
+    #socialIcones .icone {
+        font-size: 4vw;
+        width: 7vw;
+        height: 7vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 0.6rem;
+    }
+    #logoMenu {
+        padding: 0 0 0 28vw;
+        color: #0095ff;
+        font-size: 3rem;
+    }
+    #iconMenu {
+        font-size: 2rem;
+        color: white;
+    }
+
+    #conteinerMenu {
+        background-color: #002138e5;
+        height: 13vh;
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12vw;
+    }
+
+    #lblCheckMenu {
+        display: block;
+    }
+
+    #btnsMenu {
+        display: flex;
+        background-color: #002138e5;
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 13vh;
+        left: -100vw;
+        width: 100vw;
+        height: 87vh;
+        padding: 3rem 15vw;
+        transition: 0.7s;
+    }
+    #checkMenu:checked ~ #btnsMenu {
+        left: 0;
+    }
+    #btnsMenu button {
+        border: none;
+        background-color: #00000000;
+        color: white;
+        font-size: 1.3rem;
+        padding: 0.5rem 0.6rem;
+        border-radius: 0.1rem;
+        border-bottom: 3px rgba(255, 255, 255, 0) solid;
+        transition: 0.3s;
+        cursor: pointer;
+        display: block;
+    }
+    #btnsMenu button:hover {
+        border-bottom: 3px #fff52b solid;
+    }
+    #socialIcones .icone {
+        font-size: 5vw;
+        width: 10vw;
+        height: 10vw;
+    }
+    #resumo h2 {
+        font-size: 8vw;
+    }
+    #sobre picture img {
+        width: 30vw;
+    }
+    #conteinerInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 5vh;
+    }
+    #btnCv {
+        display: none;
+    }
+    #btnCVMobile {
+        display: block;
+        text-decoration: none;
+    }
+    #btnCVMobile button {
+        width: 48vw;
+        min-width: 13rem;
+        display: block;
+        border: none;
+        padding: 1rem 3rem 1rem 1rem;
+        background-color: #0095ff;
+        border-radius: 5rem;
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para telas pequenas (como smartphones) */
+@media screen and (max-width: 480px) {
+    #logoMenu {
+        padding: 0 0 0 28vw;
+        color: #0095ff;
+        font-size: 3rem;
+    }
+    #iconMenu {
+        font-size: 2rem;
+        color: white;
+    }
+
+    #conteinerMenu {
+        background-color: #002138e5;
+        height: 13vh;
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12vw;
+    }
+
+    #lblCheckMenu {
+        display: block;
+    }
+
+    #btnsMenu {
+        display: flex;
+        background-color: #002138e5;
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 13vh;
+        left: -100vw;
+        width: 100vw;
+        height: 87vh;
+        padding: 3rem 15vw;
+        transition: 0.7s;
+    }
+    #checkMenu:checked ~ #btnsMenu {
+        left: 0;
+    }
+    #btnsMenu button {
+        border: none;
+        background-color: #00000000;
+        color: white;
+        font-size: 1.3rem;
+        padding: 0.8rem 0.6rem;
+        margin: 0.2rem 0;
+        border-radius: 0.1rem;
+        border-bottom: 3px rgba(255, 255, 255, 0) solid;
+        transition: 0.3s;
+        cursor: pointer;
+        display: block;
+    }
+    #btnsMenu button:hover {
+        border-bottom: 3px #fff52b solid;
+    }
+    #btnsMenu .iconesMenu {
+        padding-right: 1.5rem;
+    }
+    .page {
+        padding-top: 16vh;
+        display: block;
+    }
+    #logo-banner {
+        display: none;
+    }
+
+    .titulo h2 {
+        font-family: 'Phudu';
+        font-size: 8vmin;
+        color: #0095ff;
+        text-align: center;
+    }
+    .titulo .linha {
+        padding: 0.6rem;
+        display: block;
+        width: 10%;
+        margin: auto;
+        border-bottom: 3px #fff52b solid;
+    }
+    #inicial {
+        background-image: url('../img/padrao-rs.png');
+        background-size: 11rem;
+        background-position: center;
+        padding-top: 10vh;
+    }
+
+    #inicial article {
+        width: 90vw;
+        margin: auto;
+        padding-top: 3vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70vh;
+    }
+
+    #resumo {
+        width: 80vw;
+        color: white;
+    }
+
+    #resumo h2 {
+        font-family: 'Phudu';
+        font-size: 8vw;
+        margin-bottom: 1rem;
+        color: #0095ff;
+    }
+
+    #resumo p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    #socialIcones .icone {
+        font-size: 5vw;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #socialIcones .icon-linkedin-in {
+        background-color: #0066c8;
+    }
+    #socialIcones .icon-github {
+        background-color: #000000;
+    }
+    #socialIcones .icon-instagram {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    }
+    #socialIcones .icon-whatsapp {
+        background-color: #33cc33;
+    }
+    #sobre .conteiner {
+        width: 90%;
+    }
+    #sobre picture img {
+        width: 50vw;
+        max-width: 400px;
+        padding: 2vw;
+    }
+    #btnCVMobile button {
+        width: 75vw;
+    }
+    #iconesConecimento {
+        padding-top: 10vh;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .iconeC {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 6rem;
+        height: 6rem;
+        font-size: 5rem;
+        color: white;
+        transition: 0.25s;
+    }
+    .subTProjetos {
+        padding: 0;
+        font-size: 5vw;
+    }
+    .imgs-Detalhes img {
+        width: 58vw;
+    }
+
+    .imgs-Detalhes h4 {
+        font-size: 6vw;
+    }
+    .imgs-Detalhes p {
+        font-size: 4vw;
+    }
+    .imgs-Detalhes figcaption {
+        padding: 1rem;
+    }
+    #imgs-design figure {
+        height: 58vw;
+    }
+
+    #imgs-design figcaption {
+        height: 65vh;
+    }
+    #imgs-aplicacoes figure {
+        height: 91vw;
+    }
+    #rodape {
+        line-height: 1.5rem;
+        padding: 2rem;
+        font-size: 3vw;
+    }
+}

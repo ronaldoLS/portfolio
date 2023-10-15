@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ronaldo Santos</title>
+        <link rel="stylesheet" href="css/estilo.css" />
+        <link rel="stylesheet" href="css/icons.css" />
+
+    </head>
+
+    <body>
+        <header>
+            <nav id="menu">
+                <div id="conteinerMenu">
+                    <span id="logoMenu" class="fi icon-RS"></span>
+                    <input type="checkbox" id="checkMenu" />
+                    <label for="checkMenu" id="lblCheckMenu"><span id="iconMenu" class="fi icon-bars"></span></label>
+                    <div id="btnsMenu">
+                        <button onclick="irSuave('#inicial', this)" class="btn-menu"><span class="fi icon-house-solid iconesMenu"></span>Inicial</button>
+                        <button onclick="irSuave('#sobre', this)" class="btn-menu"><span class="fi icon-user-solid iconesMenu"></span>Sobre Mim</button>
+                        <button onclick="irSuave('#conhecimentos', this)" class="btn-menu"><span class="fi icon-brain-solid iconesMenu"></span>Conhecimentos</button>
+                        <button onclick="irSuave('#projetos', this)" class="btn-menu"><span class="fi icon-folder-solid iconesMenu"></span>Projetos</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="inicial" class="page">
+            <article>
+                <div id="resumo">
+                    <h2>Olá, meu nome é Ronaldo!</h2>
+                    <p>Sou um Desenvolvedor front-end Jr. apaixonado por tecnologia, especializado em criação de aplicações e design gráfico. Estou sempre buscando aprender e crescer para oferecer soluções digitais excepcionais.</p>
+                    <div id="socialIcones">
+                        <a href="https://www.linkedin.com/in/ronaldols/" target="_blank"><span class="fi icon-linkedin-in icone"></span></a>
+                        <a href="https://github.com/ronaldoLS" target="_blank"><span class="fi icon-github icone"></span></a>
+                        <a href="https://www.instagram.com/ro.naldols/" target="_blank"><span class="fi icon-instagram icone"></span></a>
+                        <a href="https://wa.me/+351913454461" target="_blank"><span class="fi icon-whatsapp icone"></span></a>
+                    </div>
+                </div>
+                <span id="logo-banner" class="fi icon-RS"></span>
+            </article>
+        </section>
+        <section id="sobre" class="page">
+            <article>
+                <div class="titulo">
+                    <h2>Sobre Mim</h2>
+                    <span class="linha"></span>
+                </div>
+
+                <div class="conteiner">
+                    <picture id="foto-ronaldo">
+                        <source media="(min-width: 300px)" srcset="img/foto_ronaldo400.png" />
+                        <img src="img/foto_ronaldo320.png" alt="Ronaldo" />
+                    </picture>
+                    <div id="descricao">
+                        <div id="conteinerInfo">
+                            <div id="informaçoesPessoais">
+                                <p><strong>Nome: </strong>Ronaldo Santos</p>
+                                <p><strong>Idade: </strong><span id="idade">28</span> Anos</p>
+                                <p><strong>Localidade: </strong>Montijo - Portugal</p>
+                                <p><strong>Telemovel: </strong> +351 913 454 461</p>
+                                <p><strong>Email: </strong> ronaldo_ls@outlook.com</p>
+                            </div>
+                            <a href="documento/curriculo.pdf" ><button id="btnCv">CV</button></a>
+                            <a href="documento/curriculo.pdf" id="btnCVMobile"><button>Curriculo</button></a>
+                        </div>
+
+                        <p>Eu sou uma pessoa que adora aprender e está sempre buscando novos conhecimentos. Nunca fico satisfeito com o que já sei, então estou constantemente aprendendo e acompanhando as novas tecnologias e tendências. Me esforço para melhorar todos os dias.</p>
+                        <p>Minha experiência está na área de criação de programas de computador e aplicativos. Trabalho com Java e C#, e sei como fazer sites, sistemas e aplicativos web usando PHP, HTML5, CSS3 e Javascript. Também tenho habilidades em design, como a criação de banners, cartões de visita e edição de imagens, usando o CorelDraw e o Photoshop CC, entre outras ferramentas.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="conhecimentos" class="page">
+            <article>
+                <div class="titulo">
+                    <h2>Conhecimentos</h2>
+                    <span class="linha"></span>
+                </div>
+
+                <div id="iconesConecimento">
+                    <span class="fi icon-php iconeC"></span>
+                    <span class="fi icon-javascript iconeC"></span>
+                    <span class="fi icon-java iconeC"></span>
+                    <span class="fi icon-mysql iconeC"></span>
+                    <span class="fi icon-photoshop iconeC"></span>
+                    <span class="fi icon-corel-draw iconeC"></span>
+                    <span class="fi icon-Csharp iconeC"></span>
+                    <span class="fi icon-sql-server iconeC"></span>
+                </div>
+            </article>
+        </section>
+
+        <section id="projetos" class="page">
+            <article>
+                <div class="titulo">
+                    <h2>Projetos</h2>
+                    <span class="linha"></span>
+                </div>
+                <h3 class="subTProjetos">Aplicações</h3>
+                <div id="imgs-aplicacoes" class="imgs-Detalhes">
+                    <figure>
+                        <img src="img/img-aplicativos/calculadora.jpg" alt="Tela Calculadora simples" />
+                        <figcaption>
+                            <div>
+                                <h4>Calculadora simples</h4>
+                                <p>Aplicação web de uma calculadora simples, feita para melhorar minhas habilidades com javascript puro.</p>
+                            </div>
+                            <a href="https://ronaldols.github.io/calculadora/" target="_blank"><button class="btnProjeto">Abrir</button></a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-aplicativos/calculadoraMercado.jpg" alt="Tela Calculadora para compras" />
+                        <figcaption>
+                            <div>
+                                <h4>Calculadora para compras</h4>
+                                <p>Aplicação Web para ajudar no acompanhamento de itens e valores de uma compra em um supermercado.</p>
+                            </div>
+                            <a href="https://ronaldols.github.io/calculadora_de_mercado/" target="_blank"><button class="btnProjeto">Abrir</button></a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-aplicativos/jogoSimon.jpg" alt="Tela Jogo simon" />
+                        <figcaption>
+                            <div>
+                                <h4>Simon (jogo da memoria)</h4>
+                                <p>Aplicação Web de um jogo da memória onde cada botão acende em uma ordem e o usuário deve pressionar os botões conforme foi apresentado.</p>
+                            </div>
+                            <a href="https://ronaldols.github.io/jogo_simon/" target="_blank"><button class="btnProjeto">Abrir</button></a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h3 class="subTProjetos">Design</h3>
+                <div id="imgs-design" class="imgs-Detalhes">
+                    <figure>
+                        <img src="img/img-designs/logo_Barbearia_Tio_Marlos.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Barbearia Tio Marlos</h4>
+                            <p>Logo para uma barbearia localizada em campinas.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-designs/Logo_Sallasinfor.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Sallasinfor</h4>
+                            <p>Logo para uma empresa de tecnologia que oferece soluções para pequenas e medias empresas.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-designs/Lourena_santos.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Lourena Santos</h4>
+                            <p>Logo para empresa no ramo da Beleza com ênfase no olhar feminino.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-designs/concelheiro.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Melhor concelheiro</h4>
+                            <p>Art para premiaçao do melhor concelheiro no clube de desbravadores.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-designs/guardioes_da_lei.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Guardiões da Lei</h4>
+                            <p>Logo para clube de aventureiros da igreja adventista com foco em crianças entre 6 e 9 anos.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-designs/logo_savana.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Savana</h4>
+                            <p>Logo para clube de Desbravadores da igreja adventista com foco em crianças e jovens a partir dos 10 anos.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-designs/quarteto_art.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Quarteto Art</h4>
+                            <p>Logo para quarteto de cantores da igreja adventista.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/img-designs/unidos_da_caixa.jpg" alt="Art premiçao melhor Concelheiro" />
+                        <figcaption>
+                            <h4>Unidos da caixa FC</h4>
+                            <p>Logo para time de Futebol de várzea localizado na zona leste de São Paulo.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+        <footer id="rodape">CopyRight © <span id="ano">2023</span> Ronaldo Santos | Todos os direitos reservados</footer>
+        <script src="script/script.js"></script>
+    </body>
+</html>

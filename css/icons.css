@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.otf') format('truetype');
+}
+.fi {
+    font-family: icomoon;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+.icon-brain-solid:before {
+    content: '\e900';
+}
+.icon-file-solid:before {
+    content: '\e901';
+}
+.icon-folder-solid:before {
+    content: '\e902';
+}
+.icon-house-solid:before {
+    content: '\e903';
+}
+.icon-user-solid:before {
+    content: '\e904';
+}
+.icon-github:before {
+    content: '\e905';
+}
+.icon-instagram:before {
+    content: '\e906';
+}
+.icon-linkedin-in:before {
+    content: '\e907';
+}
+.icon-whatsapp:before {
+    content: '\e908';
+}
+.icon-RS:before {
+    content: '\e909';
+}
+.icon-php:before {
+    content: '\e90a';
+}
+.icon-sql-server:before {
+    content: '\e90b';
+}
+.icon-photoshop:before {
+    content: '\e90c';
+}
+.icon-mysql:before {
+    content: '\e90d';
+}
+.icon-javascript:before {
+    content: '\e90e';
+}
+.icon-java:before {
+    content: '\e90f';
+}
+.icon-corel-draw:before {
+    content: '\e910';
+}
+.icon-Csharp:before {
+    content: '\e911';
+}
+.icon-bars:before {
+    content: "\e912";
+  }
+  .icon-x:before {
+    content: "\e913";
+  }
