@@ -8,9 +8,12 @@
 @font-face {
     font-family: 'WorkSans';
     src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+}
+@font-face {
     font-family: 'Phudu';
     src: url('../fonts/Phudu-VariableFont_wght.ttf') format('woff');
 }
+
 #checkMenu {
     display: none;
 }
@@ -225,7 +228,7 @@ body {
 
 #iconesConecimento {
     padding-top: 18vh;
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -236,12 +239,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 1.5rem;
+    background-color: red;
+    width: 15vmin;
+    height: 15vmin;
+    font-size: 9vmin;
+}
+.iconeConhecimento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
     width: 20vmin;
     height: 20vmin;
-    margin: 1px;
-    font-size: 13vmin;
+    text-align: center;
     color: white;
-    transition: 0.25s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vmin;
+    overflow: hidden;
 }
 #conhecimentos {
     background-color: #1e1e1e;
@@ -252,6 +268,33 @@ body {
     background-repeat: no-repeat;
     padding-bottom: 10vh;
 }
+.icon-php{
+    font-size: 12vmin;
+}
+.icon-javascript{
+    font-size: 10vmin;
+}
+.icon-java{
+    font-size: 10vmin;
+}
+.icon-mysql{
+    font-size: 10vmin;
+}
+.icon-photoshop{
+    font-size: 10vmin;
+}
+.icon-corel-draw{
+    font-size: 9vmin;
+}
+.icon-Csharp{
+    font-size: 10vmin;
+}
+.icon-sql-server{
+    font-size: 9vmin;
+    
+}
+
+
 #projetos {
     padding-bottom: 5rem;
 }
